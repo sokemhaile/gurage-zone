@@ -5,8 +5,8 @@
     
 }
 body {
-    background: url('Ethiopia\ Chat\ bot\ for\ asking\ information\ \(1\).png') no-repeat center center fixed;
-    background-size: contain;
+    background: url('1.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 
@@ -164,3 +164,4 @@ body.chat-open {
     animation: l1 1.5s steps(4) infinite;
   }
   @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+  

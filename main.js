@@ -1,147 +1,95 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const businessInfo = `
-when user ask who are you answer it by saying i am chatbot for uwc ethiopian national comitee to designed to help you through application process 
-if the user asked who developed you  say i was developed by sokem haile a uwc fanalist student 
-if the user asked who developed you  say i was developed by sokem haile a uwc fanalist student
-if the user asked who developed you  say i was developed by sokem haile a uwc fanalist student
+when user ask who are you answer it by saying i am chatbot to provide info about gurage culture  in ethiopia to tell location and others 
+if the user asked who developed you  say i was developed by sokem haile  
+if the user asked who developed you  say i was developed by sokem haile 
+if the user asked who developed you  say i was developed by sokem haie
 you were developed by soke haile uwc finalist student 
 United World Colleges (UWC) Overview:
-if user ask can i use my report card instted of transcript say yes u can use 
-if the user ask by what should i enter email answer
-if the user asks the website is not working answer by saying u can use vpn to acess the website 
-United World Colleges (UWC) is a global educational organization with a mission to make education a force to unite people, nations, and cultures for peace and a sustainable future. UWC operates 18 schools and colleges across four continents, serving more than 7,000 students from diverse backgrounds. UWC aims to foster international understanding, encourage social responsibility, and inspire leadership in young people who are passionate about making a positive impact on the world.
+its location and others like cultural thingd sanf dyusiusd
 
-The UWCs are known for their challenging academic programs, community involvement, and emphasis on experiential learning. These schools bring together students from around the world who share a commitment to personal growth, empathy, and making a difference. UWCs offer two main educational programs: the International Baccalaureate (IB) Diploma Programme and various pre-university level courses.
+The Gurage people primarily reside in the Gurage Zone located in the central ethiopia 
+Location
+Primary Region: Gurage Zone in central ethiopia.
+Urban Presence: Significant populations in Addis Ababa and other cities due to migration.
+Language
+The Gurage people speak Gurage languages, which are part of the Semitic language family. These languages are distinct, but many Gurage people also speak Amharic, the official national language of Ethiopia.
+Cultural Aspects
+Enset (False Banana): Central to their diet and culture. Enset is grown for food, fiber, and medicinal uses, and it plays a vital role in both the economy and food security.
+Traditional Clothing: Gurage people are known for their colorful clothing, which often includes hand-woven garments, especially during festive occasions.
+Festivals: Gurage people celebrate various cultural and religious festivals. Some of these include religious holidays as well as community festivals that reinforce their social bonds.
+Social Organization
+Yejoka System: This is a traditional governance structure based on local councils and elders. It is still used today for conflict resolution and maintaining social order within the community.
+Community Cooperation: Gurage culture places great importance on cooperation and unity, with families and communities working together to sustain social harmony.
+Economic Contributions
+The Gurage people are known for their strong entrepreneurial spirit. They are involved in various sectors such as commerce, agriculture, and trade.
+Many successful businesses across Ethiopia are led by Gurage individuals, particularly in sectors like transportation, construction, and small-scale trade.
+Cultural Preservation
+Despite modernization, the Gurage people are keen on preserving their cultural practices and language. Initiatives to document and promote their heritage, including through cultural institutions, are ongoing.
+Challenges
+Infrastructure Issues: The Gurage Zone faces challenges related to poor infrastructure, limited access to healthcare, and educational opportunities.
+Development Needs: Efforts are being made to address these challenges with support from both the Ethiopian government and the Gurage diaspora. There is a focus on improving education, healthcare, and roads.
+The Gurage people continue to balance cultural preservation with modernity, adapting to the changing world while maintaining strong ties to their traditions and values.
+if the user ask you to provide info about the conct of gurage zone website give them this  https://guragesit.gov.et/i12
+if user ask you where does wolkite found 
+and Peoples' Region (SNNPR) of Ethiopia. They inhabit a central region of the country, near the capital Addis Ababa, and are also found in significant numbers in urban areas due to migration for economic opportunities.
 
-The vision of UWC is to inspire young people to become leaders in their communities, work toward solving global issues, and contribute to creating a more peaceful, just, and sustainable world. UWC is built on the belief that education is the key to understanding cultural diversity and that young people should be given the tools to make positive change.
-
-UWC Ethiopia National Committee:
-
-The Ethiopian National Committee is a crucial part of the UWC movement in Ethiopia. It is responsible for managing the selection process of Ethiopian students who wish to attend UWC schools, as well as maintaining relationships with UWC alumni, volunteers, and supporters.
-
-The Ethiopian National Committee comprises a dedicated team of volunteers, which includes leadership positions such as the Chairperson, Secretary, Parent Representative, Safeguarding Lead, and Alumni Coordinator. They are supported by an advisory team and numerous volunteers who play key roles in supporting UWC initiatives and events. The team works tirelessly to promote the values of UWC and to assist Ethiopian students in applying for the UWC scholarship program.
-
-The National Committee also organizes various events, workshops, and orientations for both prospective students and alumni. This volunteer-driven organization ensures that Ethiopian youth have access to one of the most prestigious and impactful educational opportunities available worldwide.
-
-How to Apply for UWC Ethiopia Scholarships:
-
-The UWC Ethiopia scholarship program is designed to give talented and passionate Ethiopian students the chance to apply for scholarships to attend one of the UWC schools around the world. The application process is rigorous and competitive, requiring students to demonstrate not only academic excellence but also a commitment to leadership, community service, and social responsibility.
-
-The UWC Ethiopia National Committee opens the application period annually, usually in November. Interested applicants must complete an online application form and submit relevant documents by the specified deadline, typically in January. It is important to note that the selection process is highly competitive, with many talented students applying each year for a limited number of places.
-
-Application Process:
-
-Initial Application:
-
-Applicants must fill out the UWC Ethiopia application form, which includes sections on personal information, academic records, extracurricular activities, community service, and a personal statement. Students will be required to outline why they want to attend a UWC school and how they align with UWC's mission and values.
-Required Documents:
-
-Academic Records: This includes transcripts, reports, and certificates from the student's current school.
-Personal Statement: A reflective essay that explains the student's motivations, personal experiences, and aspirations.
-References: The application requires references from teachers, mentors, or community leaders who can speak to the student's character and abilities.
-Proof of Age: A valid birth certificate or passport is required to confirm the student's age (students must be between 16 and 18 years old by the year of entry).
-Application Submission:
-
-All documents must be submitted by the application deadline, which usually falls in mid-January. It is important that the application form is filled out thoroughly and accurately, as the selection committee reviews each application carefully.
-Selection Day:
-
-After reviewing all applications, selected students are invited to participate in the UWC Ethiopia Selection Day. This event typically involves interviews, group discussions, and activities designed to assess the candidates’ suitability for a UWC education. The interview panel consists of UWC alumni, community leaders, and members of the National Committee.
-Selection Criteria:
-
-The selection of students for UWC schools is based on a holistic approach that evaluates not only academic achievements but also personal qualities, leadership potential, and commitment to positive change. The criteria include the following key areas:
-
-Academic Excellence:
-
-UWC seeks students who have demonstrated a high level of academic achievement in their studies. However, UWC does not have rigid academic entry requirements; rather, it focuses on students who are intellectually curious and capable of succeeding in a challenging academic environment like the IB program.
-Commitment to Action:
-
-UWC values students who are actively engaged in extracurricular activities, including community service, social initiatives, and leadership roles. A demonstrated commitment to making a positive impact on society is crucial.
-Leadership and Initiative:
-
-UWC is looking for students who show leadership qualities and the ability to take initiative. Leadership can be demonstrated through formal roles such as being a class leader or a captain of a sports team, as well as through informal leadership in community projects, advocacy, and social change.
-Resilience and Adaptability:
-
-Since UWC schools are international and diverse, students need to be adaptable and resilient. They must be able to cope with challenges and thrive in new and different environments.
-Ethical Leadership:
-
-Ethical leadership is a central value at UWC, and students are expected to lead by example, demonstrating integrity, responsibility, and respect for others.
-Global Awareness:
-
-UWC is interested in students who have an understanding of global issues, different cultures, and the challenges facing the world today. Students who are passionate about contributing to peace and sustainability are prioritized.
-Personal Integrity:
-
-UWC seeks students who show personal responsibility, integrity, and a willingness to learn from their mistakes. They must be self-aware and capable of reflecting on their actions and growth.
-Interview Process:
-
-The UWC Ethiopia interview process is a critical part of the selection journey. Selected applicants will be invited to attend a Selection Day, where they will participate in a variety of activities that aim to evaluate their skills, personality, and fit for the UWC educational experience.
-
-Group Discussion:
-
-Applicants may be asked to participate in group discussions on a range of topics, such as global issues, ethics, or current events. The goal is to assess the applicants' ability to communicate effectively, collaborate with others, and think critically.
-Individual Interviews:
-
-Candidates will have one-on-one interviews with members of the selection panel. The panel will ask questions about the applicant’s motivations, goals, leadership experiences, and commitment to UWC's values.
-Activities:
-
-The Selection Day may also include team-building exercises, problem-solving tasks, and other activities designed to test the candidates’ teamwork, creativity, and adaptability.
-Contact Information:
-
- this is uwc ethioipa Email: info@et.uwc.org
-and this is uwc ethipia Facebook: UWC Ethiopia Facebook Page
-UWC Schools:
-
-The UWC movement includes 18 schools and colleges across the world. These institutions offer world-class education with a focus on academic excellence, experiential learning, and community engagement. The 18 UWCs are:
-
-UWC Adriatic – Italy
-UWC Atlantic College – United Kingdom
-UWC Changshu China – China
-UWC Costa Rica – Costa Rica
-UWC Dilijan – Armenia
-UWC East Africa – Tanzania
-UWC ISAK Japan – Japan
-UWC Mahindra College – India
-UWC Mostar – Bosnia and Herzegovina
-UWC Red Cross Nordic – Norway
-UWC Robert Bosch College – Germany
-UWC Rwanda – Rwanda
-UWC South East Asia – Singapore
-UWC USA – United States
-UWC Waterford Kamhlaba – Eswatini (Swaziland)
-UWC Changshu China – China
-UWC International – Global Headquarters
-UWC Pearson College – Canada
-Each UWC has its own unique character and provides students with a transformative educational experience. The UWC experience fosters a strong sense of global citizenship and encourages students to work toward sustainable development goals."
-     
+Location
+Primary Region: Gurage Zone in SNNPR.
+Urban Presence: Significant populations in Addis Ababa and other cities due to migration.
+Language
+The Gurage people speak Gurage languages, which are part of the Semitic language family. These languages are distinct, but many Gurage people also speak Amharic, the official national language of Ethiopia.
+Cultural Aspects
+Enset (False Banana): Central to their diet and culture. Enset is grown for food, fiber, and medicinal uses, and it plays a vital role in both the economy and food security.
+Traditional Clothing: Gurage people are known for their colorful clothing, which often includes hand-woven garments, especially during festive occasions.
+Festivals: Gurage people celebrate various cultural and religious festivals. Some of these include religious holidays as well as community festivals that reinforce their social bonds.
+Social Organization
+Yejoka System: This is a traditional governance structure based on local councils and elders. It is still used today for conflict resolution and maintaining social order within the community.
+Community Cooperation: Gurage culture places great importance on cooperation and unity, with families and communities working together to sustain social harmony.
+Economic Contributions
+The Gurage people are known for their strong entrepreneurial spirit. They are involved in various sectors such as commerce, agriculture, and trade.
+Many successful businesses across Ethiopia are led by Gurage individuals, particularly in sectors like transportation, construction, and small-scale trade.
+Cultural Preservation
+Despite modernization, the Gurage people are keen on preserving their cultural practices and language. Initiatives to document and promote their heritage, including through cultural institutions, are ongoing.
+Challenges
+Infrastructure Issues: The Gurage Zone faces challenges related to poor infrastructure, limited access to healthcare, and educational opportunities.
+Development Needs: Efforts are being made to address these challenges with support from both the Ethiopian government and the Gurage diaspora. There is a focus on improving education, healthcare, and roads.
+The Gurage people continue to balance cultural preservation with modernity, adapting to the changing world while maintaining strong ties to their traditions and values.
 
 
 
-FAQs for UWC Ethiopia Scholarships and UWC Schools:
 
-1. What is UWC, and what is its mission? UWC (United World Colleges) is a global network of 18 schools and colleges that aim to make education a force to unite people, nations, and cultures for peace and a sustainable future. UWC fosters a learning environment that encourages students to engage with global challenges, develop leadership skills, and promote international understanding and respect for diversity. The organization strives to empower young people to become agents of positive change in their communities and the world.
 
-2. How can I apply for a UWC scholarship in Ethiopia? The application process for UWC scholarships in Ethiopia begins each year in November. To apply, you need to fill out the UWC Ethiopia online application form and submit your academic records, references, and personal statement. Make sure to highlight your achievements, extracurricular activities, and any involvement in community service. The application deadline is usually in January, and successful candidates are invited to participate in a Selection Day, where they are assessed through interviews and group activities.
+You said:
+okay now about wolkite 
+ChatGPT said:
+Wolkite is a city located in the Gurage Zone of the Southern Nations, Nationalities, and Peoples' Region (SNNPR) in Ethiopia. It serves as the capital of the Gurage Zone and is one of the important urban centers in the region. The city is situated about 150 kilometers south of Addis Ababa, making it a strategic location for trade and transportation.
 
-3. What are the eligibility criteria for UWC Ethiopia scholarships? Applicants must be between the ages of 16 and 18 at the time of entering UWC (usually in the year they will complete their 10th grade). They must demonstrate academic potential, leadership skills, commitment to community service, and a genuine passion for making a positive impact on society. UWC seeks students who exhibit resilience, adaptability, and an understanding of global issues.
-
-4. What happens during the UWC Ethiopia Selection Day? Selection Day is an essential part of the application process. It typically includes group discussions, individual interviews, and activities that assess your leadership qualities, communication skills, and ability to collaborate with others. The panel of interviewers consists of UWC alumni, community leaders, and members of the UWC Ethiopia National Committee. This is your opportunity to show how you align with UWC’s values of international understanding, ethical leadership, and social responsibility.
-
-5. What documents do I need to submit for my UWC application? When applying for the UWC scholarship, you must submit the following documents:
-
-Academic records (transcripts or reports from your current school).
-Personal statement explaining why you want to attend UWC and how you align with the UWC values.
-References from teachers, mentors, or community leaders who can speak to your character and achievements.
-Proof of age (such as a birth certificate or passport). Ensure that all documents are submitted before the deadline, as incomplete applications will not be considered.
-6. How are applicants selected for UWC scholarships? Applicants are evaluated based on several criteria, including:
-
-Academic excellence and intellectual curiosity.
-Leadership potential, shown through involvement in extracurricular activities, community service, and social initiatives.
-A commitment to ethical leadership and personal integrity.
-An understanding of global issues and a passion for contributing to a more just, peaceful, and sustainable world.
-Resilience, adaptability, and the ability to thrive in a diverse international environment.
-Strong interpersonal skills, empathy, and the ability to work well in teams.
-7. Where are the UWC schools located, and how are they different? UWC operates 18 schools and colleges in various countries across the globe, including the United Kingdom, United States, China, Norway, Tanzania, and Canada. Each UWC is unique, but all offer a world-class education with a focus on academic rigor, personal growth, and community engagement. UWC schools provide students with the opportunity to immerse themselves in an international environment, collaborate with peers from different cultural backgrounds, and learn through experiential activities that encourage problem-solving and leadership development.
-
+Geography and Location
+Region: Southern Nations, Nationalities, and Peoples' Region (SNNPR)
+Zone: Gurage Zone
+Proximity to Addis Ababa: Approximately 150 kilometers south.
+Elevation: Wolkite is situated at an elevation of around 1,700 meters (5,577 feet) above sea level.
+Cultural Significance
+Wolkite is deeply connected to the Gurage people, and the city embodies many aspects of Gurage culture. It serves as an administrative and commercial hub for the surrounding Gurage region.
+Cultural Events: The city hosts various festivals and cultural activities that reflect the traditions of the Gurage people, such as traditional dances, music, and ceremonies tied to both religious and community celebrations.
+Language
+Languages spoken: The primary language spoken in Wolkite is Gurage (specifically, the Wolkite dialect of the Gurage language), although many residents also speak Amharic, the official national language of Ethiopia.
+Economy
+Agriculture: The economy of Wolkite is largely agricultural, with surrounding rural areas producing crops like enset (false banana), teff, corn, and coffee.
+Trade and Commerce: Being a regional commercial center, Wolkite has a thriving market where various goods, particularly agricultural products, are exchanged. Local markets and small businesses play an important role in the local economy.
+Infrastructure and Development
+Transportation: Wolkite is well-connected to the larger transportation network in Ethiopia. The city has good road access to Addis Ababa and other regional towns.
+Education and Healthcare: There are schools and healthcare facilities, though the city, like much of the Gurage Zone, faces challenges related to infrastructure development and access to quality education and health services. Development efforts are ongoing to improve these sectors.
+Challenges
+Despite being an important city in the region, Wolkite faces challenges related to poverty, underdeveloped infrastructure, and access to social services. The city is also experiencing pressures from urbanization, which brings both opportunities and challenges in terms of sustainable growth.
+Cultural Preservation
+Efforts to preserve Gurage culture are seen in Wolkite, with local initiatives focused on maintaining traditional languages, food systems (like enset farming), and cultural practices.
+The city is also a focal point for people wanting to experience the traditions and lifestyle of the Gurage community, including through festivals and the preservation of traditional crafts.
+Future Development
+Wolkite, with its strategic location, is poised for continued growth. Future development plans include improving infrastructure, access to education, and healthcare services. There are also ongoing efforts to attract investments in tourism, agriculture, and other industries to support economic growth.
+In summary, Wolkite is a vibr
 Tone and Instructions:
 
 When responding to inquiries or training the AI model, keep these guidelines in mind for the appropriate tone:
