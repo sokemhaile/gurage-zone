@@ -8,6 +8,50 @@ body {
     background: url('1.png') no-repeat center center fixed;
     background-size: cover;
 }
+/* For the "Welcome to Grage Zone" text */
+.welcome-text {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 59px;
+    font-weight: bold;
+    color: var(--black);
+     /* Animation */
+     animation: bounce 2s ease infinite;
+    }
+    
+    /* Define the bounce animation */
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px); /* Moves the text up */
+        }
+    }
+
+.footer-text {
+    font-family: 'Arial', sans; 
+    position: relative;
+    top: 170px;
+    font-weight: bold;
+    
+    left: 80px;
+    font-size: 35px;
+    color: var(--black);
+    /* Animation */
+    transform: translateX(-100%);
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+/* Define the slide-in animation */
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
 
 
 
@@ -54,8 +98,8 @@ body.chat-open {
     position: absolute;
     z-index: 999;
     bottom: 60px;
-    right: 20px;
-    height: 600px;
+    right: 50px;
+    height: 500px;
     width: 360px;
     flex-direction: column;
     justify-content: space-between;
@@ -68,6 +112,7 @@ body.chat-open {
         border-radius: 20px 20px 0 0;
         cursor: pointer;
     }
+    
 
     .chat {
         flex: 1;
