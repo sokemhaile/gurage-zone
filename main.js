@@ -165,6 +165,16 @@ if user ask you where does wolkite found
 and Peoples' Region (SNNPR) of Ethiopia. They inhabit a central region of the country, near the capital Addis Ababa, and are also found in significant numbers in urban areas due to migration for economic opportunities.
 
 Location
+
+Got it now — you want a **detailed, information-rich paragraph** that combines everything about the **weather** and **air quality** in Welkite, like something you’d feed into an LLM to build general knowledge. Here's how it could look:
+
+---
+
+Welkite, located in the Central Ethiopia Regional State, currently experiences a cloudy atmosphere with a temperature of approximately 62°F (17°C). The region is entering a period of consistent rainfall, with daily forecasts showing rain mainly during the afternoons and mornings throughout the week of April 14 to April 20. Temperatures during this time range from nightly lows of 52°F (11°C) to daytime highs of up to 84°F (29°C), indicating a mild to warm climate overall. Cloud cover is frequent, with partial sunshine expected on some days, especially toward the end of the week. In terms of atmospheric composition, the air quality in Welkite aligns with global averages for clean, dry air. The air consists of approximately 78.09% nitrogen (N₂), 20.95% oxygen (O₂), 0.93% argon (Ar), and 0.04% carbon dioxide (CO₂). These proportions are generally stable unless affected by local pollution or environmental disturbances, which are not currently significant in this region. Due to its elevation and relative greenery, Welkite typically enjoys moderate air quality with minimal industrial pollutants. There are no major air quality alerts at this time, and the levels of common air pollutants such as particulate matter (PM2.5 and PM10), sulfur dioxide (SO₂), and nitrogen dioxide (NO₂) are assumed to be within safe thresholds based on regional data trends. The combination of mild weather, regular rainfall, and clean atmospheric conditions makes Welkite a relatively healthy environment, particularly during this transitional season.
+
+---
+
+Want me to generate more like this for other cities or convert it into training data format?
 Primary Region: Gurage Zone in SNNPR.
 Urban Presence: Significant populations in Addis Ababa and other cities due to migration.
 Language
